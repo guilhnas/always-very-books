@@ -1,0 +1,541 @@
+
+html, body {
+
+ font-family: "Roboto Slab", system-ui; 
+ background-color: black;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+h1{
+  background-color: white;
+font-family: "Roboto", system-ui;
+  font-size: 40px;
+  font-weight: 400;
+  display: flex;
+}
+
+.container{
+  display: flex;
+  align-itemns: center;
+}
+
+.container img{
+  height:80px;
+  padding: 20px;
+}
+/*   TITULO */
+
+.topo{
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  position: relative;
+}
+
+
+.menu{
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  background-image: url("menu.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.menuimg{
+  padding: 1em;
+}
+
+input[type="checkbox"]{
+  display: none;
+}
+
+.listamenu{
+  display: none;
+  position: absolute;
+  top: 100;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 2px 5px gray;
+  z-index:1000;
+  border-radius: 0 0 20px 20px;
+  text-transform: uppercase;
+}
+
+.abrirmenu:checked ~.listamenu{
+  display: block;
+}
+
+.menulink{
+  text-decoration: none;
+  color: black;
+}
+
+.listamenu .menuitem:hover{
+  background-color: rgb(203,41,203);
+}
+
+.menulink:hover{
+  color: white;
+  font-weight: 1000;
+}
+
+.inicio{
+  background-color: red;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  padding: 2.5em 2em;
+  margin-bottom: 1em;
+  box-shadow: 5px 4px 4px gray;
+  font-weight: 10
+}
+
+.iniciotexto{
+  font-weight: 500;
+  margin: 1em;
+}
+
+.pesquisa{
+  background-color: transparent;
+  border: 1px solid white;
+  color: rgb(216,205,205): 24px;
+  padding: 2em;
+  width: 70%;
+  font-weight:700; 
+  margin: 2em;
+}
+
+.pesquisa::planceholder{
+  font-size: 30px;
+  color: silver;
+  font-weght: 400;
+  text-align: center;
+}
+
+.titulo{
+  width: 500px;
+    display: block;
+  margin: 0 auto;
+  border-radius: 80px;
+  color: black;
+  background-color: white;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 690px;
+    padding: 0.5em 0;
+  box-shadow: 5px 4px 4px gray;
+}
+
+.swiper-slider img{
+  width: 100%;
+  box-shadow: 5px 4px 4px gray
+}
+
+.swiper-wrapper{
+  padding-top: 15px;
+}
+
+.swiper{
+  margin: 45px;
+}
+
+.swiper-pagination-bullet, .swiper-padinstion-bullet-active{
+  background-color: orange
+}
+
+
+.swiper-button-prev, .swiper-button-next{
+  color: #6D3077;
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover{
+  color: #E91B61;
+}
+
+.indicacoes{
+  background: white;
+  flex-direction: row;
+  box-shadow: 0px 4px 4px gray;
+  border-radius: 10px;
+  margin: 1em;
+  padding: 1em 1em 3em;
+  diplay: grid;
+  grid-template-columns: repeat(2, 1 fr);
+  gap: 20px;
+  padding-bottom: 80px;
+}
+
+
+.descricao{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5
+}
+
+.descricaotitulo{
+  color: black;
+  font-weght: 700;
+  display: flex;
+  font-size: 60px;
+}
+
+.descricaolivro{
+  color: silver;
+  font-size: 30px;
+  margin: 0.5em 0;
+  display: flex;
+  padding-right: 50px;
+}
+
+.descricaotexto{
+  font-size: 30px;
+  color: black;
+  display: flex;
+  padding-right: 100px;
+  text-align: justify;
+  width: 100%;
+}
+
+.descricaoimg{
+  height: 300px;
+  width: auto;
+  display: flex;
+  margin-bottom: 70px;
+  border-radius: 30px;
+  box-shadow: 10px 10px rgba(0,0,0,0.25);
+}
+
+.botoes{
+  display: flex;
+}
+
+.botoes img{
+  width: 40px;
+  height: auto;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.saibamais{
+  justify-content:space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.botao{
+  background-color: orange;
+  padding: 1em 2.2em;
+  display: block;
+  margin: 0 auto;
+  color: white;
+  text-decoration: none;
+  border-radius: 200px;
+  max-width: 100px;
+  box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+  width: 100%;
+}
+
+.bota0:hover{
+  ackground-color: red;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.autor{
+  width: 300px;
+  margin-top: 90px;
+  margin-left: 5px;
+  margin-bottom: 90px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 30px;
+  box-shadow: 10px 10px rgba(0,0,0,0.2);
+}
+
+.menor{
+  width: 200px;
+  height: auto;
+}
+
+.topicos{
+  backgroud: rgb(196,89,108);
+  text-align: center;
+  padding: 1em 0;
+}
+
+.topicostitulo{
+  color: white;
+  font-weight: 300;
+  margin-bottom: 1em;
+}
+
+.topicoslista{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.topicositem{
+  margin: 2em 0.5em;
+  
+}
+
+.topicoslink{
+  color: white;
+  padding: 1em;
+  background-color: rgb(233,114,114);
+  border-radius: 200px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.2)
+}
+
+.topicositem:hover{
+  background-color:rgb(255,37,37);
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.contato{
+  background-color: white;
+  padding: 3em;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contatotitulo{
+  font-size: 40px;
+  color: orange;
+}
+
+.contatotexto{
+  margin: 1em 0;
+  color: black;
+}
+
+.contatoemail{
+  background-color: transparent;
+  border: 1px solid red;
+  color: #FFFFFF;
+  border-radius: 85px;
+  padding: 2em;
+  width: 50%;
+  font-family: "Zen Loop",cursive;
+  font-weight: 690;
+  text-align: center;
+  font-size: 25px;
+}
+
+.contatoemail::placeholder{
+  color: red;
+  opacity: 0.7;
+  background: url("email.png") no-repeat 5%;
+  background-size: 35px;
+  width: 60%;
+}
+
+.contato input{
+  padding: o.5rem;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 30px;
+}
+
+.rodape{
+  background-color: red;
+  padding: 1em;
+}
+
+.rodapetitulo{
+   width: 500px;
+    display: block;
+  margin: 0 auto;
+  border-radius: 80px;
+  color: black;
+  background-color: white;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 690px;
+    padding: 0.5em 0;
+  box-shadow: 5px 4px 4px gray;
+  margin-bottom: 20px;
+}
+
+.listarodape{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  gab: 10px;
+}
+
+.rodapeitem{
+  display: flex;
+  align-items: center;
+}
+
+.rodapeitem img{
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+  box-shadow: 5px 4px 4px black;
+}
+
+.rodapelink{
+  color: white;
+  text-decoration: none;
+  margin-left: 0.6em;
+  font-size: 19px;
+  text-align: center;
+}
+
+@media screen and (min-width: 800px){
+  .opcoes{
+    display: flex;
+    padding-left: 5em;
+    gab: 2em;
+  }
+  .opcoeitem, .opcoeslink{
+    border-radius: 100px;
+  }
+  .opcoesitem{
+    padding: 0.5em;
+    box-shadow: 5px 4px 4px silver;
+  }
+  .opcoeslink{
+    text-decoration: none;
+  color: black;
+    font-size: 30px;
+  }
+  .opcoesitem:hover, .opcoeslink:hover{
+    background-color: blue;
+    font-weght: 1000;
+    color: white;
+    border-radius: 100px;
+  }
+  .menuimg{
+    display: none;
+    
+  }
+  .pc{
+    display: none;
+  }
+  .listamenu{
+    left: 39%;
+  }
+}
+
+@media (max-width: 799px){
+  .container img, .menuimg{
+    width: 30px;
+    height: 30px;
+    padding: 0.5;
+  }
+  
+  .menu{
+    width: 10px;
+    height:10px;
+  }
+  .opcoes{
+    display: none;
+  }
+  h1{
+    font-size: 30px;
+    text-align: center;
+  }
+  .listamnu{
+    font-size: 15px;
+  }
+  .descricao, .descricaotexto, .descricaolivro, .descricaotitulo, .topicoslink, .iniciotexto{
+    font-size: 20px;
+  }
+   .iniciotitulo{
+    font-size: 35px;
+  }
+  .indicacoes{
+    padding: 1em;
+  }
+  .botao{
+    padding: 1em 1em;
+    max-width: 70px;
+  }
+  .contatotitulo, .contatotexto{
+    font-size: 30px;
+    max-width: 90%;
+  }
+  .contatoemail::placeholder{
+    background: auto;
+    background-image: none;
+  }
+  .saibamais{
+    width: auto;
+    padding: 0;
+  }
+  .saibamais img, .autor{
+    width: 130px;
+    height: auto;
+    max-width: 90%;
+    margin-top: 5em;
+  }
+  .botao{
+    width: 50%;
+  }
+  .swiper-slide img{
+    width: 80px;
+    height: auto;
+    gap: 20px;
+  }
+  .topicos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .topicostitulos{
+    font-size:25px;
+  }
+  .topicositem{
+    height: 40px;
+    font-size: 14px;
+  }
+  .topicoslink:hover{
+    font-size: 22px;
+  }
+  
+  .listarodape, .rodapelink{
+    display: none;
+  }
+  .rodapetitulo{
+    font-size: 15px;
+    width: 80%;
+  }
+  .pesquisa::placeholder, .contatoemail::placeholder{
+    font-size: 13px;
+  }
+  .titulo{
+    font-size: 25px;
+    width: 80%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
